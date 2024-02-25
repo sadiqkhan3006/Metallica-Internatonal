@@ -1,5 +1,5 @@
 import React, { lazy } from "react";
-import HomePageVideo from "../assets/home_page_video.mp4";
+import HomePageVideo from "../assets/homePage2.mp4";
 import Mining from "../assets/mining_logo.png";
 import Trading from "../assets/trading_logo.png";
 import Logistics from "../assets/logistics_logo.png";
