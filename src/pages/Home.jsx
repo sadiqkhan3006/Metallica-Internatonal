@@ -1,4 +1,4 @@
-import React, { lazy } from "react";
+import React, { Suspense, lazy, useState } from "react";
 import HomePageVideo from "../assets/homePage2.mp4";
 import Mining from "../assets/mining_logo.png";
 import Trading from "../assets/trading_logo.png";
@@ -8,8 +8,18 @@ import picture from "../assets/aboutus.jpg";
 import Eclipse2 from "../assets/Ellipse2.png";
 import ContactForm from "../components/ContactForm";
 import { useNavigate } from "react-router-dom";
+//import Imgloader from "../components/ImgLoader";
+const Imgloader = React.lazy(() => import("../components/ImgLoader"));
+
 function Home() {
   const navigate = useNavigate();
+
+  const [loading, setLoading] = useState(true);
+  const handleImageLoad = () => {
+    console.log("heyy");
+    setLoading(false); // Set loading to false when image is fully loaded
+  };
+
   const cards = [
     {
       id: 1,
@@ -57,10 +67,14 @@ function Home() {
             RESOURCES INTERNATIONAL
           </h1>
           <p className=" w-[85%] lg:w-[70%] text-lg md:text-xl text-center text-white">
-            Metallica Resources International FZE (Metallica) is founded by
-            entrepreneurs with decades of experience in natural resources,
-            manufacturing, shipping, inland logistics and trade finance in
-            Southern and East African region.
+            Metallica Resources International FZCO (Metallica) is a Dubai based
+            company pursuing manufacturing, mining and International trading
+            across Africa, Middle East and Asia. Metallica is focused on bulk
+            chemicals used in agriculture and metal industries. The long
+            experience and deep knowledge of its founders in industrial and
+            logistics sectors in Africa coupled with strong financial
+            capabilities give Metallica a definite edge over several trading
+            companies operating in SADC region.
           </p>
         </div>
       </div>
@@ -114,11 +128,28 @@ function Home() {
         gap-x-5 "
         >
           <div className="w-full">
-            <img
-              loading="lazy"
-              className="rounded-xl h-[450px] md:h-[650px] w-[100%] object-cover "
-              src={picture}
-            />
+            <Suspense
+              fallback={
+                <div
+                  className={`flex items-center justify-center h-[450px] md:h-[650px]`}
+                >
+                  <div className="loader"></div>
+                </div>
+              }
+            >
+              {/* <img
+                onLoad={handleImageLoad}
+                className={` rounded-xl h-[450px] md:h-[650px] w-[100%] object-cover `}
+                src={picture}
+                loading="lazy"
+                alt="img"
+              /> */}
+              <Imgloader
+                imgSrc={picture}
+                imgstyle="rounded-xl h-[450px] md:h-[650px] w-[100%] object-cover"
+                altText="About-img"
+              />
+            </Suspense>
           </div>
           <div className="w-full ">
             <div className="ml-[14px]  w-[90%] flex flex-col gap-y-5">

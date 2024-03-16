@@ -1,19 +1,34 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { MdOutlineEmail } from "react-icons/md";
 import { IoCall } from "react-icons/io5";
 import { IoLocationSharp } from "react-icons/io5";
 import contactUs from "../assets/contactUs.jpg";
 import ContactForm from "./ContactForm";
+const ImgLoader = React.lazy(() => import("./ImgLoader"));
 function Contact() {
   return (
     <>
       <div className=" h-[750px] relative">
         <div className="h-full w-full">
-          <img
+          <Suspense
+            fallback={
+              <div className="h-full w-full flex justify-center items-center">
+                <div className="loader"></div>
+              </div>
+            }
+          >
+            <ImgLoader
+              imgSrc={contactUs}
+              imgstyle="h-full w-full object-cover"
+              altText="contactUs"
+            />
+          </Suspense>
+
+          {/* <img
             loading="lazy"
             className="object-cover h-full w-full"
             src={contactUs}
-          />
+          /> */}
         </div>
         <div
           className="pt-7 pb-7  rounded-lg absolute z-10 bg-[#281D49] bg-opacity-90 md:left-[15%] md:right-[15%] 
@@ -46,26 +61,37 @@ function Contact() {
                 <span>
                   <MdOutlineEmail />
                 </span>
-                <p className="text-wrap w-[80%] ">dummymail123@gmail.com</p>
+                <p className="text-wrap w-[80%] ">
+                  info@metallicainternational.com
+                </p>
               </div>
               <div className="flex items-center gap-x-4 text-2xl">
                 <span>
                   <IoCall />
                 </span>
-                <p className="text-wrap w-[80%] ">+91 1234567891</p>
+                <p className="text-wrap w-[80%] ">
+                  +91 9167730572 / +971 585879167
+                </p>
               </div>
               <div className="flex items-center gap-x-4 text-2xl">
                 <span>
                   <IoLocationSharp />
                 </span>
-                <p className="text-wrap w-[80%] ">Dubai</p>
+                <p className="text-wrap w-[80%] ">Silicon Oasis, Dubai (UAE)</p>
               </div>
             </div>
           </div>
 
           <div className="w-full h-[500px]">
-            <iframe
+            {/* <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.0060394430707!2d72.83461397520614!3d19.1073909821037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9c676018b43%3A0x75f29a4205098f99!2sSVKM&#39;s%20Dwarkadas%20J.%20Sanghvi%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1708438262143!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe> */}
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.4987177469357!2d55.37312019678956!3d25.118824800000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f65006738f61f%3A0xf34fd1b52dc98a67!2sBuilding%20A4%2C%20Dubai%20Digital%20Park%2C%20Dubai%20Silicon%20Oasis!5e0!3m2!1sen!2sin!4v1710569841532!5m2!1sen!2sin"
               width="100%"
               height="100%"
               allowfullscreen=""

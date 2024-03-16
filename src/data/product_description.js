@@ -1,13 +1,13 @@
 const product = [
   {
     id: 0,
-    title: "Magesium Oxide (alfa mag A1)",
+    title: "Magesium Oxide (Alfa Mag A1)",
     Product: "Magesium Oxide",
     CASNo: "1309-48-4",
     MolecularWt: "40.31",
     category: "Carbonates",
     description:
-      "Experience unparalleled purity with our premium-grade Magnesium Oxide boasting a minimum MgO content of 95%. Crafted to meet the stringent demands of industries where purity is paramount, this product is meticulously refined to ensure exceptional quality and performance. Ideal for pharmaceutical, healthcare, and laboratory applications, its low impurity levels guarantee minimal contamination and maximum reliability. Whether used as an antacid, laboratory reagent, or refractory material, our Magnesium Oxide sets the standard for excellence in purity and versatility.",
+      "Experience unparalleled purity with our premium-grade Magnesium Oxide boasting a minimum MgO content of 95%. Crafted to meet the stringent demands of industries where purity is paramount, this product is meticulously refined to ensure exceptional quality and performance. Ideal for Industrial, Metals and laboratory applications, its low impurity levels guarantee minimal contamination and maximum reliability. Whether used as ph regulator, laboratory reagent, or refractory material, our Magnesium Oxide sets the standard for excellence in purity and versatility.",
     img: "Mgoh1",
     chemicalProperties: [
       {
@@ -18,7 +18,7 @@ const product = [
       {
         id: 2,
         parameter: "SiO2",
-        value: "0.8% Max",
+        value: "1.5% Max",
       },
       {
         id: 3,
@@ -38,7 +38,7 @@ const product = [
       {
         id: 6,
         parameter: "LOI",
-        value: "3% Min",
+        value: "3%",
       },
       {
         id: 7,
@@ -51,7 +51,7 @@ const product = [
   },
   {
     id: 1,
-    title: "Magesium Oxide (alfa mag A2)",
+    title: "Magesium Oxide (Alfa Mag A2)",
     Product: "Magnesium Oxide",
     CASNo: "1309-48-4",
     MolecularWt: "40.31",
@@ -67,12 +67,12 @@ const product = [
       {
         id: 2,
         parameter: "SiO2",
-        value: "1% Max",
+        value: "2% Max",
       },
       {
         id: 3,
         parameter: "CaO",
-        value: "2% Max",
+        value: "2.5% Max",
       },
       {
         id: 4,
@@ -112,12 +112,12 @@ const product = [
       {
         id: 1,
         parameter: "Total Calcium Oxide as % T/CaO",
-        value: "50.2",
+        value: ">=53",
       },
       {
         id: 2,
         parameter: "Equiv. Calcium Carbonate as % CaCO3",
-        value: "89.4",
+        value: ">=95",
       },
       {
         id: 3,
@@ -162,7 +162,7 @@ const product = [
       {
         id: 11,
         parameter: "Loss On Ignition as % LOI",
-        value: "41.2",
+        value: "41",
       },
       {
         id: 12,
@@ -189,7 +189,7 @@ const product = [
     title: "Quick Lime",
     category: "Carbonates",
     description:
-      "Elevate your projects with Quicklime (CaO), the cornerstone of construction, steelmaking, and wastewater treatment. Its purity and potency make it indispensable in diverse industries, ensuring strength and reliability. Derived from limestone, Quicklime's transformative properties empower your endeavors with unparalleled versatility. Choose Quicklime and unlock a world of possibilities for your next project.",
+      "Elevate your projects with Quicklime (CaO), the cornerstone of leaching, ph regulation, steelmaking, and wastewater treatment. Its purity and potency make it indispensable in diverse industries, ensuring strong reliability. Derived from limestone, Quicklime's transformative properties empower your endeavors with unparalleled versatility. Choose Quicklime and unlock a world of possibilities for your next project.",
     img: "quicklime",
     Product: "Quick Lime",
     CASNo: "1305-78-8",
@@ -198,7 +198,7 @@ const product = [
       {
         id: 1,
         parameter: "Available Calcium Oxide as % Av. CaO",
-        value: ">85.0",
+        value: "80 - 85",
       },
       {
         id: 2,
@@ -252,7 +252,7 @@ const product = [
       {
         id: 1,
         parameter: "Particle size passing 0.50mm as % PS",
-        value: ">95.0",
+        value: "As per customer requirement",
       },
       {
         id: 2,
@@ -277,7 +277,7 @@ const product = [
     title: "Hydrated Lime",
     category: "Carbonates",
     description:
-      "Introducing Hydrated Lime: Your Key to Versatile Solutions. Formulated as Ca(OH)2, this powerhouse compound is born from the fusion of quicklime and water. Renowned for its transformative properties, it stands as a cornerstone in construction, agriculture, and environmental applications. From fortifying concrete to refining soil pH, its versatility knows no bounds. Embrace Hydrated Lime and unlock a world of possibilities for your projects.",
+      "Introducing Hydrated Lime: Your Key to Versatile Solutions. Formulated as Ca(OH)2, this powerhouse compound is born from the fusion of quicklime and water. Renowned for its transformative properties, it stands as a cornerstone in construction, agriculture, and environmental applications. From fortifying concrete, wastewater treatment, to refining soil pH, its versatility knows no bounds. Embrace Hydrated Lime and unlock a world of possibilities for your projects.",
     img: "hydratedlime",
     Product: "Hydrated Lime",
     CASNo: "1305-62-0",
@@ -414,7 +414,7 @@ const product = [
       {
         id: 11,
         parameter: "Particle Size (mesh)",
-        value: "95% passing 200 mesh",
+        value: "90% passing 200 mesh",
       },
     ],
     physicalProperties: [],

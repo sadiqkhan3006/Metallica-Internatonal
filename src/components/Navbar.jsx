@@ -31,8 +31,8 @@ function Navbar() {
         className={` fixed z-20 w-full   min-h-[70px] bg-white bg-opacity-[75%] lg:min-h-[100px] flex flex-row navbarStyle`}
       >
         <div className="ml-[7%] mr-[7%] lg:items-center  flex flex-col gap-y-5 lg:flex-row w-full justify-between text-2xl">
-          <div className="mt-5 lg:mt-0  hover:text-[#ee5e3e]  transition-colors  delay-75 duration-150 ease-in  cursor-pointer">
-            <Link to="/">Logo</Link>
+          <div className="font-bold uppercase  mt-5 lg:mt-0  hover:text-[#ee5e3e]  transition-colors  delay-75 duration-150 ease-in  cursor-pointer">
+            <Link to="/">Metallica</Link>
           </div>
           <ul
             className={`${

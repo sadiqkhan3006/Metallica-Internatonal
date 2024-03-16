@@ -1,9 +1,10 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, lazy, Suspense } from "react";
 import AboutUs from "../assets/aboutDisplay.jpg";
 import Mining from "../assets/mining_logo.png";
 import Trading from "../assets/trading_logo.png";
 import Logistics from "../assets/logistics_logo.png";
 import { useNavigate } from "react-router-dom";
+const ImgLoader = React.lazy(() => import("../components/ImgLoader"));
 function About() {
   const businessPlan = [
     {
@@ -51,7 +52,7 @@ function About() {
     },
     {
       id: 5,
-      desc: "Relentless focus on operations efficiency, process improvements andtechnical enhancements even at client end to maximize value delivery andensure customer delight.",
+      desc: "Relentless focus on operations efficiency, process improvements and technical enhancements even at client end to maximize value delivery and ensure customer delight.",
     },
   ];
   const cards = [
@@ -92,11 +93,24 @@ function About() {
       {/* hero Section */}
       <div className=" h-[750px] w-full  relative">
         <div className="h-full w-full">
-          <img
+          <Suspense
+            fallback={
+              <div className="h-full w-full flex justify-center items-center">
+                <div className="loader"></div>
+              </div>
+            }
+          >
+            <ImgLoader
+              imgSrc={AboutUs}
+              imgstyle="h-full w-full object-cover"
+              altText="AboutUs"
+            />
+          </Suspense>
+          {/* <img
             src={AboutUs}
             loading="lazy"
             className="h-full w-full object-cover"
-          />
+          /> */}
         </div>
         <div
           ref={tradeRef}
@@ -110,7 +124,7 @@ function About() {
             About Us
           </h1>
           <p className=" mb-8  ml-[7%] mr-[7%] text-sm md:text-xl text-left text-white">
-            Metallica Resources International FZE (Metallica) is founded by
+            Metallica Resources International FZCO (Metallica) is founded by
             entrepreneurs with decades of experience in natural resources,
             manufacturing, shipping, inland logistics and trade finance in
             Southern and East African region. Leveraging this solid experience,
@@ -130,7 +144,7 @@ function About() {
       <div className="ml-[7%] mr-[7%] mt-[calc(532px/2+60px)] md:mt-[calc(476px/2+60px)] lg:mt-[calc(308px/2+50px)] mb-[70px]">
         <div>
           <h1 className="text-[40px] font-bold text-center text-[#281D49]">
-            BUSINESS PLAN
+            Strategic Pillars
           </h1>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-14 gap-y-10  ">
             {businessPlan.map((item) => (
@@ -183,15 +197,15 @@ function About() {
               Mission & Vision
             </h1>
             <p>
-              Our mission is to become the #1 company in trading of natural
-              resources & stones(carbonates category) and niche raw materials
-              for industrial sector in SouthAfrican Development Community (SADC)
-              region by 2027.
+              Our mission is to become the #1 company in trading of chosen
+              natural resources and niche raw materials for industrial sector in
+              South African Development Community (SADC) region by 2027.
             </p>
             <p>
               Our vision is to become a listed entity by 2030, creating value by
-              virtue of owning and servicing an enviable client base comprising
-              of top industrial customers in SADC region.
+              virtue of owning high grade mineral assets and servicing an
+              enviable client base comprising of top industrial customers in
+              SADC region.
             </p>
           </div>
         </div>

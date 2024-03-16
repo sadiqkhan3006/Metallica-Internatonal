@@ -1,15 +1,31 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import Miningjpg from "../assets/mining.jpg";
+import TradingPageImg from "../assets/Trading_page.png";
+const ImgLoader = React.lazy(() => import("../components/ImgLoader"));
+
 function Mining() {
   return (
     <>
       <div className=" h-[750px] relative">
         <div className="h-full w-full">
-          <img
+          <Suspense
+            fallback={
+              <div className="h-full w-full flex justify-center items-center">
+                <div className="loader"></div>
+              </div>
+            }
+          >
+            <ImgLoader
+              imgSrc={TradingPageImg}
+              imgstyle="h-full w-full object-cover"
+              altText="Mining"
+            />
+          </Suspense>
+          {/* <img
             loading="lazy"
             className="object-cover h-full w-full"
             src={Miningjpg}
-          />
+          /> */}
         </div>
         <div
           className="pt-7 pb-7  rounded-lg absolute z-10 bg-[#281D49] bg-opacity-90 md:left-[15%] md:right-[15%] 
@@ -23,15 +39,15 @@ function Mining() {
           <p className=" w-[85%] lg:w-[70%] text-[16px] md:text-xl text-left text-white mb-4">
             Metallica has explored and discovered high grade carbonate mineral
             deposits in Southern and Central African regions .The exploration
-            was done using highly qualified professionals and the best in classs
-            technology, to ensure long term viability of mining and
-            manufacturing of projects
+            was done using highly qualified professionals and the best
+            contemporary technology, to ensure long term viability of mining and
+            associated manufacturing of projects
           </p>
         </div>
       </div>
 
       <div className=" ml-[7%] mr-[7%] font-bold  text-4xl mt-[300px] mb-[200px] text-center text-[#281D49] ">
-        COMMING SOON...
+        Project Information comming soon...
       </div>
     </>
   );
