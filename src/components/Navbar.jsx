@@ -3,7 +3,7 @@ import { IoIosArrowDropdown } from "react-icons/io";
 import { Link, Navigate, matchPath, useLocation } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
 import { RxCross1 } from "react-icons/rx";
-import logo from "../assets/logo-final.png";
+import Logo from "../assets/logo_final.svg";
 function Navbar() {
   const [menuOpen, setmenuOpen] = useState(false);
   const navlinks = [
@@ -28,16 +28,18 @@ function Navbar() {
   return (
     <div>
       <nav
-        className={` fixed z-20 w-full   min-h-[70px] bg-white bg-opacity-[75%] lg:min-h-[100px] flex flex-row navbarStyle`}
+        className={` fixed z-20 w-full min-h-[96px]    bg-white bg-opacity-[100%] lg:h-[96px] flex flex-row navbarStyle`}
       >
         <div className="ml-[7%] mr-[7%] lg:items-center  flex flex-col gap-y-5 lg:flex-row w-full justify-between text-2xl">
-          <div className="font-bold uppercase  mt-5 lg:mt-0  hover:text-[#ee5e3e]  transition-colors  delay-75 duration-150 ease-in  cursor-pointer">
-            <Link to="/">Metallica</Link>
+          <div className="font-bold uppercase  mt-5 lg:mt-0 text-[#281D49]  hover:text-[#ee5e3e]  transition-colors  delay-75 duration-150 ease-in  cursor-pointer font-Poppins  ">
+            <Link to="/">
+              <img src={Logo} />
+            </Link>
           </div>
           <ul
             className={`${
               menuOpen ? "flex" : "hidden "
-            }   gap-y-5 mb-5 lg:mb-0 lg:ml-0  lg:flex flex-col lg:flex-row gap-x-6  text-2xl   text-[#281D49]`}
+            }   gap-y-5 mb-5 lg:mb-0 lg:ml-0  lg:flex flex-col lg:flex-row gap-x-[64px]  text-[16px] leading-5  font-Inter  font-bold   text-[#939596]`}
           >
             {navlinks.map((item) =>
               item.title === "Services" ? (

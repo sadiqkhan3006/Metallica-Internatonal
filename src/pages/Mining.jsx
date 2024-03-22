@@ -47,7 +47,7 @@ function Mining() {
       </div>
 
       <div className=" ml-[7%] mr-[7%] font-bold  text-4xl mt-[300px] mb-[200px] text-center text-[#281D49] ">
-        Project Information comming soon...
+        Project Information coming soon...
       </div>
     </>
   );

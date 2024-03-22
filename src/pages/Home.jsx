@@ -57,7 +57,7 @@ function Home() {
           className="pt-7 pb-7  rounded-lg min-h-[300px] absolute z-10 bg-[#281D49] bg-opacity-90 md:left-[15%] md:right-[15%] 
         left-[7%] right-[7%] -bottom-[150px] w-[86%] md:w-[70%] flex flex-col items-center justify-center"
         >
-          <h1 className="font-bold text-[36px] md:text-[40px] leading-[48px] tracking-tight text-white ">
+          <h1 className="font-Inter  font-bold text-[36px] md:text-[40px] leading-[48px] tracking-tight text-white ">
             METALLICA
           </h1>
           <h1
@@ -84,7 +84,7 @@ function Home() {
           className="md:w-[45%] mb-[20px] lg:w-[30%] text-center md:leading-[71px] tracking-tighter mx-auto 
         font-semibold  text-5xl md:text-6xl text-[#281D49]"
         >
-          Explore Our Solutions
+          What We Do
         </h1>
         <div className="flex  flex-col gap-y-10 lg:flex-row mt-[8px] gap-x-[80px] pb-[50px]  ">
           {cards.map((card) => (

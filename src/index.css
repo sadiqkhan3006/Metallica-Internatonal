@@ -1,12 +1,15 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 body {
   margin: 0;
-  font-family: Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: Inter, Poppins, Ptsans -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -32,6 +35,33 @@ body {
       transform: rotate(360deg);
   }
   } 
+
+
+.execution-card{
+
+/* card */
+box-shadow: 0px 41px 89px 0px rgba(0, 0, 0, 0.08);
+}
+.MissionAndVision{
+  background-image: url("./assets/about/M&V_bg.png");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  
+  background-repeat: no-repeat;
+}
+.services-card{
+  filter: drop-shadow(0px 41px 89px rgba(0, 0, 0, 0.08));
+}
+.gradient-text-button{
+  background: linear-gradient(to right, #1E1C49, #9D2161, #F45634);
+  border: none;
+  color: transparent; /* Make text transparent */
+  -webkit-background-clip: text; /* Apply background to text */
+  -webkit-text-fill-color: transparent; /* Make text color transparent */
+  cursor: pointer;
+  font-size: inherit; /* You can adjust font size as needed */
+}
 .navbarStyle{
   transition-property: all;
   transition-duration: 200ms;

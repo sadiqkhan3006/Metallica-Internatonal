@@ -17,6 +17,7 @@ const Contact = React.lazy(() => import("./components/Contact"));
 const Trade = React.lazy(() => import("./pages/Trade"));
 const Mining = React.lazy(() => import("./pages/Mining"));
 const Logistics = React.lazy(() => import("./pages/Logistics"));
+const AboutNew = React.lazy(() => import("./pages/AboutNew"));
 function ScrollToTopOnNavigate() {
   const location = useLocation();
   console.log("Location:", location.pathname);
@@ -50,6 +51,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/services/mining" element={<Mining />} />
           <Route path="/services/logistics" element={<Logistics />} />
+          <Route path="/about/new" element={<AboutNew />} />
         </Routes>
       </Suspense>
 
