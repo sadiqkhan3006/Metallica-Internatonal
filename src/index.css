@@ -47,11 +47,40 @@ box-shadow: 0px 41px 89px 0px rgba(0, 0, 0, 0.08);
   height: 100%;
   width: 100%;
   background-size: cover;
-  
   background-repeat: no-repeat;
+  
 }
 .services-card{
   filter: drop-shadow(0px 41px 89px rgba(0, 0, 0, 0.08));
+}
+.gradient-border-button{
+  position: relative;
+  border: none;
+  
+  /* border-image: linear-gradient(to right, #1E1C49, #9D2161, #F45634);
+  border-image-slice: 1;
+  border-radius: 18px; */
+}
+.gradient-border-button::before{
+  content: "";
+  position: absolute;
+  display: block;
+  z-index: -1;
+  background:linear-gradient(to top right, #1E1C49, #9D2161, #F45634); 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; 
+  margin: -1px;
+  border-radius: 8px;
+ 
+  
+  
+}
+.gradient-border-button > span {
+  position: relative; /* Ensure text remains above the border */
+  z-index: 1; /* Ensure text is above the pseudo-element */
+  /* Add gradient text styles here */
 }
 .gradient-text-button{
   background: linear-gradient(to right, #1E1C49, #9D2161, #F45634);
@@ -60,7 +89,7 @@ box-shadow: 0px 41px 89px 0px rgba(0, 0, 0, 0.08);
   -webkit-background-clip: text; /* Apply background to text */
   -webkit-text-fill-color: transparent; /* Make text color transparent */
   cursor: pointer;
-  font-size: inherit; /* You can adjust font size as needed */
+   /* You can adjust font size as needed */
 }
 .navbarStyle{
   transition-property: all;
@@ -94,7 +123,8 @@ box-shadow: 0px 41px 89px 0px rgba(0, 0, 0, 0.08);
 }
 .Productcard-Style{
   -webkit-transform: translate3d(0,0,0);
-  filter: drop-shadow(4px 8px 20px rgba(0,0,0,0.2));
+  
+  box-shadow: 0px 41px 89px 0px rgba(0, 0, 0, 0.08);
 }
 .img-Style{
   -webkit-transform: translate3d(0,0,0);
@@ -110,7 +140,7 @@ box-shadow: 0px 41px 89px 0px rgba(0, 0, 0, 0.08);
 }
 .formStyle{
   -webkit-transform: translate3d(0,0,0);
-  filter: drop-shadow(2px 2px 20px rgba(0,0,0,0.2));
+  
 }
 .btn {
   width: 60;

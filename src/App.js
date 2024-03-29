@@ -11,6 +11,13 @@ import ViewProduct from "./pages/ViewProduct";
 //import Mining from "./pages/Mining";
 //import Logistics from "./pages/Logistics";
 import React, { Suspense, useEffect } from "react";
+import HomeNew from "./pages/HomeNew";
+import ContactUs from "./pages/ContactUs";
+import TradeNew from "./pages/TradeNew";
+import ViewProductNew from "./pages/ViewProductNew";
+import MiningNew from "./pages/MiningNew";
+import LogisticsNew from "./pages/LogisticsNew";
+import Services from "./pages/Services";
 const Home = React.lazy(() => import("./pages/Home"));
 const About = React.lazy(() => import("./pages/About"));
 const Contact = React.lazy(() => import("./components/Contact"));
@@ -41,17 +48,27 @@ function App() {
         }
       >
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/services/trading" element={<Trade />} />
-          <Route
+          {/* <Route path="/" element={<Home />} /> */}
+          <Route path="/" element={<HomeNew />} />
+          {/* <Route path="/services/trading" element={<Trade />} /> */}
+          <Route path="/services/trading" element={<TradeNew />} />
+          {/* <Route
             path="/services/trading/product/:productId"
             element={<ViewProduct />}
+          /> */}
+          <Route
+            path="/services/trading/product/:productId"
+            element={<ViewProductNew />}
           />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/services/mining" element={<Mining />} />
-          <Route path="/services/logistics" element={<Logistics />} />
-          <Route path="/about/new" element={<AboutNew />} />
+          {/* <Route path="/about" element={<About />} /> */}
+          {/* <Route path="/contact" element={<Contact />} /> */}
+          <Route path="/contact" element={<ContactUs />} />
+          {/* <Route path="/services/mining" element={<Mining />} /> */}
+          <Route path="/services/mining" element={<MiningNew />} />
+          {/* <Route path="/services/logistics" element={<Logistics />} /> */}
+          <Route path="/services/logistics" element={<LogisticsNew />} />
+          <Route path="/about" element={<AboutNew />} />
+          <Route path="/services" element={<Services />} />
         </Routes>
       </Suspense>
 

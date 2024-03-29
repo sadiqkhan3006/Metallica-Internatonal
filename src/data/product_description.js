@@ -6,6 +6,8 @@ const product = [
     CASNo: "1309-48-4",
     MolecularWt: "40.31",
     category: "Carbonates",
+    shortDesc:
+      "Experience unparalleled purity with our premium-grade Magnesium Oxide boasting a minimum MgO content of 95%.",
     description:
       "Experience unparalleled purity with our premium-grade Magnesium Oxide boasting a minimum MgO content of 95%. Crafted to meet the stringent demands of industries where purity is paramount, this product is meticulously refined to ensure exceptional quality and performance. Ideal for Industrial, Metals and laboratory applications, its low impurity levels guarantee minimal contamination and maximum reliability. Whether used as ph regulator, laboratory reagent, or refractory material, our Magnesium Oxide sets the standard for excellence in purity and versatility.",
     img: "Mgoh1",
@@ -56,6 +58,8 @@ const product = [
     CASNo: "1309-48-4",
     MolecularWt: "40.31",
     category: "Carbonates",
+    shortDesc:
+      "Unlock a world of possibilities with our versatile Magnesium Oxide offering a minimum MgO content of 93%.",
     description: `Unlock a world of possibilities with our versatile Magnesium Oxide offering a minimum MgO content of 93%. Engineered to deliver reliable performance across a wide range of applications, this product strikes the perfect balance between quality and affordability. From construction and environmental remediation to agriculture and manufacturing, its carefully balanced composition ensures optimal results without compromising on cost-effectiveness. With superior stability and consistent quality, our Magnesium Oxide is your trusted companion for diverse industrial and agricultural needs.`,
     img: "Mgoh2",
     chemicalProperties: [
@@ -102,6 +106,8 @@ const product = [
     id: 2,
     title: "Limestone",
     category: "Carbonates",
+    shortDesc:
+      "Unlock the boundless potential of limestone, a natural marvel coveted for its enduring strength and timeless elegance.",
     description:
       "Unlock the boundless potential of limestone, a natural marvel coveted for its enduring strength and timeless elegance. Embraced by architects, builders, and artisans alike, limestone transcends boundaries, enriching diverse projects with its versatility and charm. From majestic structures to lush landscapes, its beauty knows no bounds. Experience the enduring allure and unmatched durability of limestone, and elevate your creations to new heights of excellence.",
     img: "limestone",
@@ -188,6 +194,8 @@ const product = [
     id: 3,
     title: "Quick Lime",
     category: "Carbonates",
+    shortDesc:
+      "Elevate your projects with Quicklime (CaO), the cornerstone of leaching, ph regulation, steelmaking, and wastewater treatment. Its purity and potency make it indispensable.",
     description:
       "Elevate your projects with Quicklime (CaO), the cornerstone of leaching, ph regulation, steelmaking, and wastewater treatment. Its purity and potency make it indispensable in diverse industries, ensuring strong reliability. Derived from limestone, Quicklime's transformative properties empower your endeavors with unparalleled versatility. Choose Quicklime and unlock a world of possibilities for your next project.",
     img: "quicklime",
@@ -276,6 +284,8 @@ const product = [
     id: 4,
     title: "Hydrated Lime",
     category: "Carbonates",
+    shortDesc:
+      "Introducing Hydrated Lime: Your Key to Versatile Solutions. Formulated as Ca(OH)2, this powerhouse compound is born from the fusion of quicklime and water.",
     description:
       "Introducing Hydrated Lime: Your Key to Versatile Solutions. Formulated as Ca(OH)2, this powerhouse compound is born from the fusion of quicklime and water. Renowned for its transformative properties, it stands as a cornerstone in construction, agriculture, and environmental applications. From fortifying concrete, wastewater treatment, to refining soil pH, its versatility knows no bounds. Embrace Hydrated Lime and unlock a world of possibilities for your projects.",
     img: "hydratedlime",
@@ -360,6 +370,8 @@ const product = [
     id: 5,
     title: "Magnesium Oxide-feed grade",
     category: "Carbonates",
+    shortDesc:
+      "Experience Excellence in Livestock Nutrition with Magnesium Oxide Feed Grade. Our premium-grade supplement, meticulously crafted with a minimum MgO content of 80%",
     description:
       "Experience Excellence in Livestock Nutrition with Magnesium Oxide Feed Grade. Our premium-grade supplement, meticulously crafted with a minimum MgO content of 80%, ensures optimal health and performance for your animals. From promoting digestive health to preventing grass tetany, its purity and effectiveness are unmatched. Trust in our Magnesium Oxide Feed Grade to elevate your livestock management practices and cultivate thriving herds.",
     img: "feedgrade",
@@ -427,6 +439,8 @@ const product = [
     category: "Sulphur",
     description:
       "Discover the Natural Power of Sulphur. Our premium-grade Sulphur offers a multitude of benefits across various industries. From agriculture to manufacturing, its versatile properties make it indispensable. As a key component in fertilizer production, Sulphur promotes soil health and enhances crop yields. In industrial applications, it's utilized for manufacturing chemicals, pharmaceuticals, and rubber products. With its wide-ranging uses and sustainable sourcing, Sulphur is a vital element driving innovation and growth worldwide.",
+    shortDesc:
+      "Discover the Natural Power of Sulphur. Our premium-grade Sulphur offers a multitude of benefits across various industries. ",
     img: "sulphur",
     Product: "Sulphur",
     CASNo: "7704-34-9",

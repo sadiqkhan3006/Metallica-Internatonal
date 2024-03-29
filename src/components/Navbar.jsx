@@ -28,7 +28,7 @@ function Navbar() {
   return (
     <div>
       <nav
-        className={` fixed z-20 w-full min-h-[96px]    bg-white bg-opacity-[100%] lg:h-[96px] flex flex-row navbarStyle`}
+        className={` fixed z-40 w-full min-h-[96px]    bg-white bg-opacity-[100%] lg:h-[96px] flex flex-row navbarStyle`}
       >
         <div className="ml-[7%] mr-[7%] lg:items-center  flex flex-col gap-y-5 lg:flex-row w-full justify-between text-2xl">
           <div className="font-bold uppercase  mt-5 lg:mt-0 text-[#281D49]  hover:text-[#ee5e3e]  transition-colors  delay-75 duration-150 ease-in  cursor-pointer font-Poppins  ">
@@ -57,14 +57,14 @@ function Navbar() {
                     </span>
                   </div>
                   <div
-                    className="absolute bg-white p-3 top-16 border left-0 
+                    className="absolute bg-white p-3 top-[60px] border left-0 
              w-[300px] z-20 cursor-pointer 
              invisible opacity-0 group-hover:visible  
              group-hover:opacity-100  
              transition-all duration-200 delay-200 
              group-hover:-translate-y-[.65em]"
                   >
-                    <div className="absolute left-[5%] top-0 -z-10 h-6 w-6 translate-x-[80%] translate-y-[-40%] rotate-45 select-none rounded bg-white"></div>
+                    {/* <div className="absolute left-[5%] top-0 -z-10 h-6 w-6 translate-x-[80%] translate-y-[-40%] rotate-45 select-none rounded bg-white"></div> */}
                     <ul className="  ">
                       {item?.sublinks.map((eachitem) => (
                         <Link
