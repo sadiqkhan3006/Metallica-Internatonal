@@ -28,7 +28,7 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import Services from "../components/Services";
+import Services from "../components/ServicesCards";
 import { useNavigate } from "react-router-dom";
 function AboutNew() {
   const navigate = useNavigate();
@@ -452,7 +452,7 @@ function AboutNew() {
       {/* Our services  */}
       <div className="lg:mb-[120px] mb-[40px] md:mb-[60px] ml-[7%] mr-[7%]">
         <h1 className="text-center font-Ptsans  text-[#281C49] font-bold mb-[32px] lg:mb-[64px]  text-[24px] md:text-[32px] lg:text-[48px]">
-          Explore Our Services
+          What We Do
         </h1>
         <div>
           <Services />

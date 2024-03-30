@@ -1,7 +1,7 @@
 import React from "react";
 import Light from "../assets/Light.png";
 import servicesHero from "../assets/servicesHero.png";
-import ServicesCards from "../components/Services";
+import ServicesCards from "../components/ServicesCards";
 import ContactSection from "../components/ContactSection";
 function Services() {
   return (

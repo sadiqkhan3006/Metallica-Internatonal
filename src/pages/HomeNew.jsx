@@ -4,7 +4,7 @@ import Light from "../assets/Light.png";
 import GradientButton from "../components/GradientButton.jsx";
 import WhatWeDo from "../assets/home/steptodown1.png";
 import WhyChooseUs from "../assets/home/whychooseus.png";
-import Services from "../components/Services.jsx";
+import Services from "../components/ServicesCards.jsx";
 import homeDesign from "../assets/home/homebgdesign.png";
 import Gallery from "../assets/home/Gallery.png";
 import World from "../assets/home/world.png";
@@ -148,7 +148,7 @@ function HomeNew() {
         </div>
         <div className="mb-[32px] lg:mb-[64px]  z-10 ml-[7%] mr-[7%]">
           <h1 className=" text-[24px] md:text-[32px] lg:text-[48px] text-white font-Ptsans font-bold   text-center  mb-[8px]">
-            Explore Our Services
+            What We Do
           </h1>
           <p className="font-Inter text-[14px] leading-[18px] md:text-[16px] md:leading-[26px]    text-[#F1F1F2]  text-center ">
             We provide exceptional services tailored to our clients' specific
