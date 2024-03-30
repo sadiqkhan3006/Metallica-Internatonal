@@ -56,7 +56,7 @@ function ContactUs() {
         <div className="w-full pt-[35px] md:pt-[67px] lg:pt-[43px]">
           <div>
             <h1 className="text-[#281C49] font-Ptsans text-[24px] lg:text-[34px] lg:leading-[40px] font-bold mb-[16px] md:mb-[24px] lg:mb-[64px] ml-[24px] mr-[24px] lg:text-left text-center">
-              Fill up the form our team will get back to you{" "}
+              Get In Touch
             </h1>
             <ContactForm />
           </div>

@@ -454,7 +454,9 @@ function AboutNew() {
         <h1 className="text-center font-Ptsans  text-[#281C49] font-bold mb-[32px] lg:mb-[64px]  text-[24px] md:text-[32px] lg:text-[48px]">
           Explore Our Services
         </h1>
-        <Services />
+        <div>
+          <Services />
+        </div>
       </div>
     </div>
   );

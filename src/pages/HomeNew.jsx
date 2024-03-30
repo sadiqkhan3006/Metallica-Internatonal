@@ -76,7 +76,7 @@ function HomeNew() {
         <div className="ml-[7%] mr-[7%] flex flex-col md:flex-row gap-y-[24px] md:gap-x-[21px] lg:gap-x-[40px] lg:h-[481px] items-center">
           <div className=" h-full w-full flex flex-col gap-y-4 md:pt-[80px] md:pb-[80px] ">
             <div className="text-[#281C49] font-Ptsans text-[24px]  md:text-[32px] lg:text-[48px] font-bold">
-              What do we do?
+              What We Do?
             </div>
             <div className="font-Inter text-[12px] leading-[18px]  lg:text-lg lg:leading-7 text-[#6C6C6C]  ">
               Metallica Resources International FZCO leverages the expertise of
@@ -155,7 +155,7 @@ function HomeNew() {
             needs.
           </p>
         </div>
-        <div className="ml-[7%] mr-[7%] z-10">
+        <div className="ml-[7%] mr-[7%] ">
           <Services />
         </div>
       </div>
@@ -234,7 +234,7 @@ function HomeNew() {
         <div className="ml-[7%] mr-[7%]">
           <div className="mb-[24px] md:mb-[32px]">
             <h1 className=" text-[24px] md:text-[32px] lg:text-[48px] text-[#281C49] font-Ptsans font-bold   text-center  mb-[4px]">
-              Our Locations
+              Where We Operate
             </h1>
             <p className="font-Inter  text-[14px] leading-[18px] md:text-[16px] md:leading-[26px]  lg:text-lg lg:leading-7 text-[#6C6C6C] text-center ">
               Global reach of our export operations
