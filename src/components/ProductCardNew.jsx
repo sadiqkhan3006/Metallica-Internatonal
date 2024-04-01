@@ -34,8 +34,7 @@ function ProductCard({ productData }) {
                   `/services/trading/product/${productData.title
                     .toLowerCase()
                     .split(" ")
-                    .join("-")}?productId=${productData.id}`,
-                  { replace: true }
+                    .join("-")}?productId=${productData.id}`
                 );
                 // window.location.href = `/services/trading/product/${productData.title
                 //   .toLowerCase()

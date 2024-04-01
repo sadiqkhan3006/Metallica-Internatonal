@@ -5,7 +5,7 @@ import { useForm } from "@formspree/react";
 import { toast } from "react-hot-toast";
 function ContactForm() {
   const [state, handleSubmit] = useForm("xnqebqry");
-  console.log(state);
+  //console.log(state);
   const location = useLocation();
   const matchRoute = (route) => {
     return matchPath({ path: route }, location.pathname);
@@ -48,7 +48,7 @@ function ContactForm() {
               name="name"
               id="name"
               placeholder="John Doe"
-              required="true"
+              required={true}
             />
           </div>
           <div className="flex flex-col gap-y-[8px] lg:gap-y-[13px]">
@@ -69,7 +69,7 @@ function ContactForm() {
               name="email"
               id="email"
               placeholder="johndoe123@gmail.com"
-              required="true"
+              required={true}
             />
           </div>
           <div className="flex flex-col gap-y-[8px] lg:gap-y-[13px]">
@@ -110,7 +110,7 @@ function ContactForm() {
               name="country"
               id="country"
               placeholder="Dubai"
-              required="true"
+              required={true}
             />
           </div>
           <div className="flex flex-col gap-y-[8px] lg:gap-y-[13px]">
@@ -131,7 +131,7 @@ function ContactForm() {
               name="subject"
               id="subject"
               placeholder="Enter your Subject"
-              required="true"
+              required={true}
             />
           </div>
           <div className="flex flex-col gap-y-[8px] lg:gap-y-[13px]">
@@ -153,7 +153,7 @@ function ContactForm() {
                border-[#E3E3E4]
               text-[14px] leading-6 text-[#281C49]`}
               placeholder="Enter your Message"
-              required="true"
+              required={true}
               style={{
                 resize: "none",
               }}

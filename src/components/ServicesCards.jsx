@@ -38,7 +38,7 @@ function Services() {
           >
             <div
               className={` ${
-                value.id == 3
+                value.id === 3
                   ? "lg:mb-[50px] mb-[30px]"
                   : "mb-[12px] lg:mb-[8px]"
               } flex items-center justify-center`}
@@ -60,7 +60,7 @@ function Services() {
               className="flex items-center justify-center"
             >
               <button className=" font-Inter text-lg gradient-text-button">
-                Learn More -&gt;
+                {`Learn More ->`}
               </button>
             </div>
           </div>

@@ -27,7 +27,7 @@ const Logistics = React.lazy(() => import("./pages/Logistics"));
 const AboutNew = React.lazy(() => import("./pages/AboutNew"));
 function ScrollToTopOnNavigate() {
   const location = useLocation();
-  console.log("Location:", location.pathname);
+  //console.log("Location:", location.pathname);
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, [location.pathname]);
@@ -43,7 +43,7 @@ function App() {
       <Suspense
         fallback={
           <div className="w-full h-[100vh] flex items-center justify-center font-bold text-4xl   ">
-            <p>Loading...</p>
+            <p className="loader"></p>
           </div>
         }
       >
